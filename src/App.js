@@ -1,10 +1,15 @@
 import React from 'react'
-import { BrowserRouter as Router} from 'react-router-dom'
+import { Col, Container, Row } from 'react-bootstrap';
+import { BrowserRouter as Router } from 'react-router-dom'
 import MainRoutes from './routes/routes'
 function App() {
   return (
     <Router>
-      <MainRoutes />
+      <Container fluid={'sm'}>
+        
+            <MainRoutes />
+        
+      </Container>
     </Router>
   );
 }
