@@ -1,16 +1,17 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Dashboard from '../pages/Dashboard'
-import Profile from '../pages/Profile'
+import ListagemSimulacoes from '../pages/ListagemSilumacoes'
+import Simulacao from '../pages/Simulacao'
+
 
 export default function MainRoutes() {
     return (
         <Switch>
-            <Route path="/" exact>
-                <Dashboard />
+            <Route path="/simulacao" exact>
+                <Simulacao />
             </Route>
-            <Route path="/profile" >
-                <Profile />
+            <Route path="/simulacoes" >
+                <ListagemSimulacoes />
             </Route>
         </Switch>
     )
