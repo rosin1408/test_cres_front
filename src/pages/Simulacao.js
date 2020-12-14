@@ -6,7 +6,6 @@ import ResultadoSimulacao from './components/ResultadoSimulacao'
 
 export default function Simulacao() {
 
-    const [showSuccess, setShowSuccess] = useState(false)
     const [showError, setShowError] = useState(false)
     const [msgErro, setMsgErro] = useState(false)
 
@@ -66,7 +65,6 @@ export default function Simulacao() {
     return (
         <>
             <h1>Simulação Seguro Prestamista</h1>
-            <Alert variant="success" show={showSuccess}>Alerta de sucesso</Alert>
             <Alert variant="danger" show={showError}>{msgErro}</Alert>
 
             <Form>
@@ -132,7 +130,6 @@ export default function Simulacao() {
                     <Button variant="primary" onClick={simular}>SIMULAR</Button>
                 </Col>
             </Row>
-            
             
             <ResultadoSimulacao show={showSimulacao} simulacao={simulacao} />
         </>
